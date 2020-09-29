@@ -3,6 +3,7 @@ var recipes = {
   flour: '2 cup',
   sugar: '3 cup'
 }
+var recipes1 = recipes;
 
 function updateObjectWithKeyAndValue(object, key, value){
   return Object.assign({}, object, {[key]: value})
@@ -21,9 +22,7 @@ function deleteFromObjectByKey(object, key){
  Object.assign({}, delete object[key])
 return object
 }
-deleteFromObjectByKey(recipes, 'flour')
-
-
+deleteFromObjectByKey(recipes1, 'flour')
 
 
 function destructivelyDeleteFromObjectByKey(object, key){
