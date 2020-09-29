@@ -20,7 +20,7 @@ destructivelyUpdateObjectWithKeyAndValue(recipes, 'sugar', '5 tbsp')
 
 function deleteFromObjectByKey(object, key){
  delete object[key]
- //Object.assign({}, object)
+ Object.assign({}, object)
 return object
 }
 deleteFromObjectByKey(recipes, 'flour')
