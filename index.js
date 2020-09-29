@@ -13,3 +13,4 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   return object.key = ["value"]
 }
 destructivelyUpdateObjectWithKeyAndValue(recipes, 'sugar', '5 tbsp')
+console.log(recipes)
