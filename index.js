@@ -9,13 +9,16 @@ function updateObjectWithKeyAndValue(object, key, value){
 }
 updateObjectWithKeyAndValue(recipes, 'milk', '1 cup')
 
+
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   object[key] = value
   return object
 }
+
 destructivelyUpdateObjectWithKeyAndValue(recipes, 'sugar', '5 tbsp')
 
 function deleteFromObjectByKey(object, key){
   delete object.key
   return object
 }
+deleteFromObjectByKey(recipes, 'flour')
